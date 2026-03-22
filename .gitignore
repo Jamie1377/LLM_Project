@@ -1,0 +1,19 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Local datasets and generated artifacts
+enriched_news.parquet
+outputs_compare_models/
+embedding_cache_xgb_compare_fresh_20260316/
+hf_embedding_release/
+hf_preliminary_results/
+
+# Large model/artifact files
+*.pt
+*.npy
+*.joblib
+
+# Derived splits
+*_after_merge.parquet
