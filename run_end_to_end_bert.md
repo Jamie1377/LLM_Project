@@ -1,5 +1,28 @@
 # Run Commands: End-to-End BERT Training
 
+## 0) Playground inference (single row, dataset, or UI)
+
+Single row (news + BTC + FNG -> sentiment/confidence):
+```bash
+python hf_playground_inference.py single \
+  --text "Bitcoin ETF inflows rose this week as institutional demand accelerated." \
+  --btc_price_now 67000 \
+  --fng_value 62 \
+  --fng_classification Greed
+```
+
+Batch dataset inference (CSV/Parquet/JSON in, CSV/Parquet/JSON out):
+```bash
+python hf_playground_inference.py batch \
+  --input_path your_input.csv \
+  --output_path your_predictions.csv
+```
+
+Optional Hugging Face-style playground UI (requires `pip install gradio`):
+```bash
+python hf_playground_inference.py ui --host 0.0.0.0 --port 7860
+```
+
 ## 1) Go to project folder
 ```bash
 cd /Users/jamie/Downloads/LLM_Project
