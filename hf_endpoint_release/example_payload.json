@@ -1,0 +1,8 @@
+{
+  "inputs": {
+    "text": "Bitcoin ETF inflows rose this week as institutional demand accelerated.",
+    "btc_price_now": 67000,
+    "fng_value": 62,
+    "fng_classification": "Greed"
+  }
+}
